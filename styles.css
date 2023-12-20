@@ -19,8 +19,11 @@ li {
 }
 
 button {
-    width: 100px;
-    min-height: 27px;
+    max-width: 130px;
+    min-width: 130px;
+    min-height: 35px;
+    max-height: 35px;
+    font-weight: bold;
     justify-content: center;
     align-items: center;
     border-radius: 0.5em;
@@ -42,10 +45,12 @@ button {
 .header,
 .intro,
 .showcase,
-.quote {
+.quote,
+.end,
+.footer {
     display: flex;
     justify-content: space-between;
-    padding: 50px 200px;
+    padding: 50px 250px;
 }
 
 .header {
@@ -70,7 +75,25 @@ button {
     background-color: #e5e7eb;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
     padding: 100px 400px;
+}
+
+.end {
+    background-color: #3882f6;
+    margin: 100px 250px;
+    padding: 50px 100px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    color: white;
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mixed-block {
@@ -167,4 +190,15 @@ button {
 .quotee {
     display: flex;
     align-self: flex-end;
+}
+
+.end .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.clear-button {
+    color: white;
+    background-color: #3882f6;
+    border: 2px solid white;
 }
